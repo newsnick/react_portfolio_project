@@ -6,16 +6,17 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <p>
-          &copy; {new Date().getFullYear()} Your Website. All rights reserved.
+          &copy; {new Date().getFullYear()} My Portfolio App. All rights
+          reserved.
         </p>
         <div className="social-icons">
-          <a href="#">
+          <a href="/">
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="#">
+          <a href="/">
             <i className="fab fa-linkedin-in"></i>
           </a>
-          <a href="#">
+          <a href="/">
             <i className="fab fa-github"></i>
           </a>
         </div>

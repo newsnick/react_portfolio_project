@@ -4,7 +4,7 @@ import '../styles/About.css'
 const About = () => {
   return (
     <section className="about">
-      <div className="about-container">
+      <div className="container">
         <h2 className="about-title">About Me</h2>
         <p className="about-description">
           I am a passionate developer with expertise in web development. I love
@@ -16,7 +16,7 @@ const About = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris.
         </p>
-        <a href="#contact" className="about-button">
+        <a href="#contact" className="about-button btn btn-primary">
           Contact Me
         </a>
       </div>

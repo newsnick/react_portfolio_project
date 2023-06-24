@@ -1,0 +1,81 @@
+/* .contact {
+  padding: 80px 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item {
+  text-align: center;
+  margin: 20px;
+  width: 300px;
+}
+
+.contact-item i {
+  font-size: 48px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.contact-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+ */
+
+.section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  width: 30%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contact-item i {
+  font-size: 36px;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.contact-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 14px;
+  color: #666;
+}

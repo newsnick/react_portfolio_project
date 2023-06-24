@@ -7,7 +7,7 @@ import project3 from '../assets/images/project3.jpg'
 const Projects = () => {
   return (
     <section className="projects">
-      <div className="projects-container">
+      <div className="container">
         <h2 className="projects-title">Projects</h2>
         <div className="projects-grid">
           <div className="project-card">
@@ -16,7 +16,7 @@ const Projects = () => {
             <p className="project-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <a href="/" className="project-link">
+            <a href="/" className="project-link btn btn-primary">
               Learn More
             </a>
           </div>
@@ -26,7 +26,7 @@ const Projects = () => {
             <p className="project-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <a href="/" className="project-link">
+            <a href="/" className="project-link btn btn-primary">
               Learn More
             </a>
           </div>
@@ -36,7 +36,7 @@ const Projects = () => {
             <p className="project-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <a href="/" className="project-link">
+            <a href="/" className="project-link btn btn-primary">
               Learn More
             </a>
           </div>

@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,80 @@
   to {
     transform: rotate(360deg);
   }
+}
+ */
+
+.App {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.sidebar {
+  background-color: #f8f9fa;
+  border-right: 1px solid #e9ecef;
+}
+
+.navbar {
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #333;
+  font-size: 18px;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.nav-item {
+  margin-top: 10px;
+}
+
+.nav-link {
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.col-lg-9 {
+  padding: 20px;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #007bff;
 }
