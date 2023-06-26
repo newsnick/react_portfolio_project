@@ -40,6 +40,15 @@
 
 .App {
   font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+.divider {
+  width: 95%;
+  height: 1px;
+  background: hsl(220, 12.8%, 31%);
+  margin-top: 18px;
+  margin-bottom: 12px;
 }
 
 .container-fluid {
@@ -48,15 +57,41 @@
 
 .row {
   margin: 0;
+  background-color: #282c34;
+  height: 100vh;
 }
 
 .sidebar {
-  background-color: #f8f9fa;
-  border-right: 1px solid #e9ecef;
+  padding: 0;
+  margin: 0;
+  background-color: #282c34;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .navbar {
-  padding: 10px;
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.sidebar .custom-navbar {
+  background-color: #333842; /* Set background color */
+  margin: 0;
+  display: block;
+  margin-top: -50px;
+  padding-top: 15px;
+}
+
+.custom-column {
+  background-color: #282c34; /* Set background color */
+  margin: 0;
+  padding: 0;
+  z-index: 1;
 }
 
 .navbar-brand {
@@ -111,4 +146,8 @@
 
 .social-icons a:hover {
   color: #007bff;
+} /* Tooltip container */
+
+.navbar-brand {
+  text-align: center;
 }

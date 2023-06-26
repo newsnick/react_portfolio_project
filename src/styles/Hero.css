@@ -235,38 +235,42 @@ footer.css: css Copy code .footer {
   color: #0056b3;
 }
  */
-
 .hero {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #282c34;
+  color: #c2c2c2;
   padding: 40px;
   text-align: center;
 }
 
 .hero-title {
-  font-size: 36px;
-  font-weight: bold;
+  font-weight: 400;
+  font-size: 3.2rem;
+  letter-spacing: 2px;
   margin: 0;
+  text-shadow: 6px 6px 7.5px rgb(0, 0.3, 0.5);
 }
 
 .hero-subtitle {
-  font-size: 18px;
+  font-size: 2.4rem;
+  font-weight: 400;
   margin-bottom: 20px;
+  text-shadow: 6px 6px 7.5px rgb(0, 0.3, 0.5);
+  color: #909295;
 }
 
 .hero-button {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 400;
   text-decoration: none;
-  background-color: #fff;
-  color: #007bff;
+  background-color: #21252b;
+  color: #abb2bf;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero-button:hover {
-  background-color: #fff;
-  color: #007bff;
+  background-color: #abb2bf;
+  color: #21252b;
 }

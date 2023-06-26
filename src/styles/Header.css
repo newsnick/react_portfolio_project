@@ -42,10 +42,24 @@
   color: #007bff;
 }
  */
+.custom-navbar {
+  margin-left: 50px;
+  background-color: #21252b;
+  color: #21252b;
+}
 
 .header {
-  background-color: #333;
+  background-color: #21252b;
   padding: 10px;
+  margin-left: 50px;
+  padding-left: 0px;
+  z-index: -1;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 
 .header-container {
@@ -79,10 +93,16 @@
 
 .header-menu-item a {
   font-size: 14px;
-  color: #fff;
+  color: #abb2bf;
   text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
 }
 
 .header-menu-item a:hover {
-  color: #007bff;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+  color: #fff;
 }

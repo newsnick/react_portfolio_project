@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import '@fortawesome/fontawesome-free/css/all.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -11,6 +12,8 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { IconContext } from 'react-icons'
+import { FaHome, FaGraduationCap, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 function App() {
   return (
@@ -20,11 +23,17 @@ function App() {
 
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-3 sidebar">
-              <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="col-sm-1 p-0 sidebar">
+              <nav className="navbar navbar-expand-sm navbar-dark custom-navbar">
                 <div className="container">
-                  <Link className="navbar-brand" to="/">
-                    Home
+                  <Link className="navbar-brand m-1" to="/">
+                    <IconContext.Provider
+                      value={{ color: '#979faf', size: '30px' }}
+                    >
+                      <div>
+                        <FaHome />
+                      </div>
+                    </IconContext.Provider>
                   </Link>
                   <button
                     className="navbar-toggler"
@@ -41,22 +50,40 @@ function App() {
                     <ul className="navbar-nav flex-column">
                       <li className="nav-item">
                         <Link className="nav-link" to="/about">
-                          About Me
+                          {' '}
+                          <IconContext.Provider
+                            value={{ color: '#979faf', size: '30px' }}
+                          >
+                            <div>
+                              <FaGraduationCap />
+                            </div>
+                          </IconContext.Provider>
                         </Link>
                       </li>
+                      <span className="divider">
+                        <hr />
+                      </span>
                       <li className="nav-item">
                         <Link className="nav-link" to="/projects">
-                          Projects
+                          <IconContext.Provider
+                            value={{ color: '#979faf', size: '30px' }}
+                          >
+                            <div>
+                              <FaGithub />
+                            </div>
+                          </IconContext.Provider>
                         </Link>
                       </li>
                       <li className="nav-item">
                         <Link className="nav-link" to="/skills">
-                          Skills
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link className="nav-link" to="/contact">
-                          Contact
+                          {' '}
+                          <IconContext.Provider
+                            value={{ color: '#979faf', size: '30px' }}
+                          >
+                            <div>
+                              <FaLinkedin />
+                            </div>
+                          </IconContext.Provider>
                         </Link>
                       </li>
                     </ul>
@@ -65,7 +92,7 @@ function App() {
               </nav>
             </div>
 
-            <div className="col-lg-9">
+            <div className="col-sm-9 custom-column">
               <Routes>
                 <Route path="/" element={<Hero />} />
                 <Route path="/about" element={<About />} />
@@ -77,7 +104,7 @@ function App() {
           </div>
         </div>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   )
