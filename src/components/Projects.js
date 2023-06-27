@@ -1,8 +1,8 @@
 import React from 'react'
 import '../styles/Projects.css'
-import project1 from '../assets/images/project1.jpg'
-import project2 from '../assets/images/project2.jpg'
-import project3 from '../assets/images/project3.jpg'
+import project1 from '../assets/images/hydra.svg'
+import project2 from '../assets/images/thebox.svg'
+import project3 from '../assets/images/ai.svg'
 
 const Projects = () => {
   return (

@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "Hydra",
+    "technology": "Node.js, React.js, Sass",
+    "responsibilities": "team collaboration, responsive and interactive UI, API and UI design integration, clean code, testing and debugging, ",
+    "photo": "./images/assests/hydra.svg",
+    "link": "click to visit"
+  },
+  {
+    "id": 2,
+    "name": "TheBox",
+    "technology": "Node.js, React.js, Sass",
+
+    "responsibilities": "team collaboration, responsive and interactive UI, API and UI design integration, clean code, testing and debugging, ",
+    "photo": "./images/assests/thebox.svg",
+    "link": "click to visit"
+  },
+  {
+    "id": 3,
+    "name": "AI",
+    "technology": "HTML, CSS",
+    "responsibilities": "team collaboration, responsive and interactive UI, UI design integration, clean code, testing and debugging, ",
+
+    "photo": "./images/assests/ai.svg",
+    "link": "click to visit"
+  }
+]

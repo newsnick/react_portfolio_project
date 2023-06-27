@@ -14,6 +14,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { IconContext } from 'react-icons'
 import { FaHome, FaGraduationCap, FaGithub, FaLinkedin } from 'react-icons/fa'
+import ProjectData from './components/ProjectData'
 
 function App() {
   return (
@@ -103,7 +104,7 @@ function App() {
             </div>
           </div>
         </div>
-
+        <ProjectData />
         {/* <Footer /> */}
       </div>
     </Router>
