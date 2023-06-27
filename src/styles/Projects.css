@@ -58,17 +58,54 @@
 }
  */
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+a {
+  text-decoration: none;
+  color: #abb2bf;
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+a:hover {
+  color: lightgray;
+  text-decoration: none; /* Remove underline when hovered */
+}
+
+ul {
+  text-align: left;
+}
+
+.list {
+  list-style: square;
+  color: #abb2bf;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  color: #abb2bf;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: 'Ubuntu Mono', 'Roboto Mono', monospace;
+  padding: 10px 0 10px 0;
+}
+
 .projects {
-  background-color: #f8f8f8;
+  background-color: #282c34;
   padding: 40px;
   text-align: center;
 }
 
 .projects-title {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
+  font-size: 1.6rem;
+  color: #42a5f5;
   margin-bottom: 20px;
+  line-height: 1.15;
 }
 
 .projects-grid {

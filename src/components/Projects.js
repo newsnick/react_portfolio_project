@@ -1,47 +1,98 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/Projects.css'
-import project1 from '../assets/images/hydra.svg'
-import project2 from '../assets/images/thebox.svg'
-import project3 from '../assets/images/ai.svg'
+
+import ProjectData from './ProjectData'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
 
 const Projects = () => {
+  const [showModal, setShowModal] = useState(false)
+  const [selectedProject, setSelectedProject] = useState(null)
+
+  const handleOpenModal = (projectId) => {
+    setSelectedProject(projectId)
+    setShowModal(true)
+  }
+
+  const handleCloseModal = () => {
+    setShowModal(false)
+  }
+
+  const renderProjectData = () => {
+    if (selectedProject) {
+      return <ProjectData projectId={selectedProject} />
+    }
+    return null
+  }
+
   return (
     <section className="projects">
       <div className="container">
-        <h2 className="projects-title">Projects</h2>
-        <div className="projects-grid">
-          <div className="project-card">
-            <img src={project1} alt="Project 1" className="project-image" />
-            <h3 className="project-name">Project 1</h3>
-            <p className="project-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <h3 className="projects-title">
+          Some of the projects I've worked on so far
+        </h3>
+        <ul>
+          <li className="list">
+            <p>
+              <a href="#" onClick={() => handleOpenModal(1)}>
+                react.hydra
+              </a>
             </p>
-            <a href="/" className="project-link btn btn-primary">
-              Learn More
-            </a>
-          </div>
-          <div className="project-card">
-            <img src={project2} alt="Project 2" className="project-image" />
-            <h3 className="project-name">Project 2</h3>
-            <p className="project-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <ul>
+              <li className="list">A mobile optimized landing page</li>
+              <li className="list">React.js, Node.js, Sass</li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li className="list">
+            <p>
+              <a href="#" onClick={() => handleOpenModal(2)}>
+                react.thebox
+              </a>
             </p>
-            <a href="/" className="project-link btn btn-primary">
-              Learn More
-            </a>
-          </div>
-          <div className="project-card">
-            <img src={project3} alt="Project 3" className="project-image" />
-            <h3 className="project-name">Project 3</h3>
-            <p className="project-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <ul>
+              <li className="list">A landing page for fetching API data</li>
+              <li className="list">React.js, Node.js, Sass</li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li className="list">
+            <p>
+              <a href="#" onClick={() => handleOpenModal(3)}>
+                html.ai
+              </a>
             </p>
-            <a href="/" className="project-link btn btn-primary">
-              Learn More
-            </a>
-          </div>
-        </div>
+            <ul>
+              <li className="list">A pixel perfect landing page</li>
+              <li className="list">HTML, CSS</li>
+            </ul>
+          </li>
+        </ul>
       </div>
+
+      <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header
+          style={{
+            backgroundColor: '#21252b',
+            fontFamily: 'Ubuntu Mono, Roboto Mono, monospace',
+          }}
+          closeButton
+        >
+          <Modal.Title style={{ color: '#42a5f5' }}>
+            Project Details
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{ backgroundColor: '#282c34' }}>
+          {renderProjectData()}
+        </Modal.Body>
+        <Modal.Footer style={{ backgroundColor: '#21252b' }}>
+          <Button variant="secondary" onClick={handleCloseModal}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </section>
   )
 }
