@@ -24,7 +24,7 @@ function App() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-1 p-0 sidebar">
-              <nav className="navbar navbar-expand-sm navbar-dark custom-navbar">
+              <nav className="navbar navbar-expand-sm navbar-dark custom-navbar2">
                 <div className="container">
                   <Link className="navbar-brand m-1" to="/">
                     <IconContext.Provider
@@ -92,7 +92,7 @@ function App() {
               </nav>
             </div>
 
-            <div className="col-sm-9 custom-column">
+            <div className="col-sm-11 custom-column">
               <Routes>
                 <Route path="/" element={<Hero />} />
                 <Route path="/about" element={<About />} />

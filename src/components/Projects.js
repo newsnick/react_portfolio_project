@@ -27,46 +27,46 @@ const Projects = () => {
 
   return (
     <section className="projects">
-      <div className="container">
+      <div className="container2">
         <h3 className="projects-title">
           Some of the projects I've worked on so far
         </h3>
         <ul>
-          <li className="list">
+          <li className="list2">
             <p>
               <a href="#" onClick={() => handleOpenModal(1)}>
                 react.hydra
               </a>
             </p>
             <ul>
-              <li className="list">A mobile optimized landing page</li>
-              <li className="list">React.js, Node.js, Sass</li>
+              <li className="list2">A mobile optimized landing page</li>
+              <li className="list2">React.js, Node.js, Sass</li>
             </ul>
           </li>
         </ul>
         <ul>
-          <li className="list">
+          <li className="list2">
             <p>
               <a href="#" onClick={() => handleOpenModal(2)}>
                 react.thebox
               </a>
             </p>
             <ul>
-              <li className="list">A landing page for fetching API data</li>
-              <li className="list">React.js, Node.js, Sass</li>
+              <li className="list2">A landing page for fetching API data</li>
+              <li className="list2">React.js, Node.js, Sass</li>
             </ul>
           </li>
         </ul>
         <ul>
-          <li className="list">
+          <li className="list2">
             <p>
               <a href="#" onClick={() => handleOpenModal(3)}>
                 html.ai
               </a>
             </p>
             <ul>
-              <li className="list">A pixel perfect landing page</li>
-              <li className="list">HTML, CSS</li>
+              <li className="list2">A pixel perfect landing page</li>
+              <li className="list2">HTML, CSS</li>
             </ul>
           </li>
         </ul>

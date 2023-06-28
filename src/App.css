@@ -46,6 +46,11 @@
   width: 100%;
 }
 
+body {
+  font-family: 'Ubuntu Mono', 'Roboto Mono', monospace;
+  width: 100%;
+}
+
 .divider {
   width: 95%;
   height: 1px;
@@ -73,6 +78,7 @@
 .container {
   display: flex;
   flex-direction: column-reverse;
+  margin-top: 20px;
 }
 
 .navbar {
@@ -82,11 +88,11 @@
   height: 100vh;
 }
 
-.sidebar .custom-navbar {
+.sidebar .custom-navbar2 {
   background-color: #333842; /* Set background color */
   margin: 0;
   display: block;
-  margin-top: -50px;
+  margin-top: -70px;
   padding-top: 15px;
 }
 
@@ -94,6 +100,7 @@
   background-color: #282c34; /* Set background color */
   margin: 0;
   padding: 0;
+  margin-top: 20px;
   z-index: 1;
 }
 
