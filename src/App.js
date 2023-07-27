@@ -14,97 +14,135 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { IconContext } from 'react-icons'
 import { FaHome, FaGraduationCap, FaGithub, FaLinkedin } from 'react-icons/fa'
+import Education from './components/Education'
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Header />
+      <>
+        <div className="App">
+          <Header />
 
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-sm-1 p-0 sidebar">
-              <nav className="navbar navbar-expand-sm navbar-dark custom-navbar2">
-                <div className="container">
-                  <Link className="navbar-brand m-1" to="/">
-                    <IconContext.Provider
-                      value={{ color: '#979faf', size: '30px' }}
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-sm-1 p-0 sidebar">
+                <nav className="navbar navbar-expand-sm navbar-dark custom-navbar2">
+                  <div className="container">
+                    <Link className="navbar-brand m-1" to="/">
+                      <IconContext.Provider
+                        value={{ color: '#979faf', size: '30px' }}
+                      >
+                        <div>
+                          <FaHome />
+                        </div>
+                      </IconContext.Provider>
+                    </Link>
+                    <button
+                      className="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarNav"
+                      aria-controls="navbarNav"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
                     >
-                      <div>
-                        <FaHome />
-                      </div>
-                    </IconContext.Provider>
-                  </Link>
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span className="navbar-toggler-icon"></span>
-                  </button>
-                  <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav flex-column">
-                      <li className="nav-item">
-                        <Link className="nav-link" to="/about">
-                          {' '}
-                          <IconContext.Provider
-                            value={{ color: '#979faf', size: '30px' }}
+                      <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                      <ul className="navbar-nav flex-column">
+                        <li className="nav-item">
+                          <Link className="nav-link" to="/about">
+                            {' '}
+                            <IconContext.Provider
+                              value={{ color: '#979faf', size: '30px' }}
+                            >
+                              <div>
+                                <FaGraduationCap />
+                              </div>
+                            </IconContext.Provider>
+                          </Link>
+                        </li>
+                        <span className="divider">
+                          <hr />
+                        </span>
+                        <li className="nav-item">
+                          {/* <Link
+                            className="nav-link"
+                            to="https://github.com/newsnick"
                           >
-                            <div>
-                              <FaGraduationCap />
-                            </div>
-                          </IconContext.Provider>
-                        </Link>
-                      </li>
-                      <span className="divider">
-                        <hr />
-                      </span>
-                      <li className="nav-item">
-                        <Link className="nav-link" to="/projects">
-                          <IconContext.Provider
-                            value={{ color: '#979faf', size: '30px' }}
+                            <IconContext.Provider
+                              value={{ color: '#979faf', size: '30px' }}
+                            >
+                              <div>
+                                <FaGithub />
+                              </div>
+                            </IconContext.Provider>
+                          </Link> */}
+                          <a
+                            className="nav-link"
+                            href="https://github.com/newsnick"
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
-                            <div>
-                              <FaGithub />
-                            </div>
-                          </IconContext.Provider>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link className="nav-link" to="/skills">
-                          {' '}
-                          <IconContext.Provider
-                            value={{ color: '#979faf', size: '30px' }}
+                            <IconContext.Provider
+                              value={{ color: '#979faf', size: '30px' }}
+                            >
+                              <div>
+                                <FaGithub />
+                              </div>
+                            </IconContext.Provider>
+                          </a>
+                        </li>
+                        <li className="nav-item">
+                          {/* <Link
+                            className="nav-link"
+                            to="https://www.linkedin.com/in/antonio-lega-70202a137/"
                           >
-                            <div>
-                              <FaLinkedin />
-                            </div>
-                          </IconContext.Provider>
-                        </Link>
-                      </li>
-                    </ul>
+                            {' '}
+                            <IconContext.Provider
+                              value={{ color: '#979faf', size: '30px' }}
+                            >
+                              <div>
+                                <FaLinkedin />
+                              </div>
+                            </IconContext.Provider>
+                          </Link> */}
+                          <a
+                            className="nav-link"
+                            href="https://www.linkedin.com/in/antonio-lega-70202a137/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <IconContext.Provider
+                              value={{ color: '#979faf', size: '30px' }}
+                            >
+                              <div>
+                                <FaLinkedin />
+                              </div>
+                            </IconContext.Provider>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </nav>
-            </div>
+                </nav>
+              </div>
 
-            <div className="col-sm-11 custom-column">
-              <Routes>
-                <Route path="/" element={<Hero />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/skills" element={<Skills />} />
-                <Route path="/contact" element={<Contact />} />
-              </Routes>
+              <div className="col-sm-11 custom-column">
+                <Routes>
+                  <Route path="/" element={<Hero />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/projects" element={<Projects />} />
+                  <Route path="/skills" element={<Skills />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/education" element={<Education />} />
+                </Routes>
+              </div>
             </div>
           </div>
+          {/* <Footer /> */}
         </div>
-        {/* <Footer /> */}
-      </div>
+      </>
     </Router>
   )
 }

@@ -19,6 +19,10 @@ ul {
   text-align: left;
 }
 
+.footerP {
+  position: relative;
+}
+
 .list {
   list-style: square;
   color: #abb2bf;

@@ -27,7 +27,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="header-menu-item">
-              <Link className="icons" to="/about">
+              <Link className="icons" to="/education">
                 <IconContext.Provider
                   value={{ color: '#3f99e2', size: '25px' }}
                 >
